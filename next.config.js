@@ -1,6 +1,8 @@
+const withAstroturf = require("next-astroturf");
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = withAstroturf(nextConfig);

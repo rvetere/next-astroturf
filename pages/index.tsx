@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Button } from "../components/button";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
+          <Button>Astroturf</Button>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
