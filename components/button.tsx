@@ -1,6 +1,10 @@
 import { css } from "astroturf";
+import { FunctionComponent, ReactNode } from "react";
 
-export function Button({ children, ...props }) {
+export const Button: FunctionComponent<{ children: ReactNode }> = ({
+  children,
+  ...props
+}) => {
   return (
     <button
       {...props}
@@ -14,4 +18,4 @@ export function Button({ children, ...props }) {
       {children}
     </button>
   );
-}
+};
